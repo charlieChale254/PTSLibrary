@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace PTSLibrary
 {
-    internal class Status
+    public enum Status
     {
+        ReadyToStart = 1,
+        InProgress = 2,
+        Completed = 3,
+        WaitingForPredecessor = 4
     }
 }

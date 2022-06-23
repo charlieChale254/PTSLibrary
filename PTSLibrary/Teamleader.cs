@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace PTSLibrary
 {
-    internal class Teamleader
+    class TeamLeader : User
     {
+        private int teamId;
+        private int id;
+        private string name;
+       
+
+        public int TeamId
+        {
+            get { return teamId; }
+            set { teamId = value; }
+        }
+
+        public TeamLeader(string name, int id, int teamId)
+        {
+            this.name = name;
+            this.id = id;
+            this.teamId = teamId;
+        }
     }
 }
